@@ -4,7 +4,7 @@
 La guía de configuración del CH552, pretende dar a conocer la forma de instalación y configuración del microcontrolador. El CH552 es un MCU de núcleo E8051 mejorado, compatible con el conjunto de instrucciones MCS51. Admite una frecuencia de reloj del sistema de hasta 16 MHz en el IDE ARDUINO. Tiene una ROM de memoria de programa de 16K incorporada, iRAM interna de 256 bytes y xRAM interna de 1K byte. Y xRAM admite acceso directo a memoria (DMA). Ademas viene incorporado ADC, detección de tecla táctil capacitiva, 3 temporizadores y captura de señal y PWM, 2 UART, SPI, controlador de dispositivo USB y transceptor de velocidad completa y otros módulos funcionales.
 
 
-![Front image](https://raw.githubusercontent.com/UNIT-Electronics/CH552-en-Arduino/cesar2/img/systemblockdiagram.png?token=GHSAT0AAAAAACF5TMINI7EQEAWATIDQHCLSZGNNNCA)
+![Front image](/img/systemblockdiagram.png)
 
 
 **Para mayor información consulte la pagina oficial  WCH**
