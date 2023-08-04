@@ -61,3 +61,9 @@ La herramienta de carga actual puede usar el controlador [CH375](https://www.wch
 
 Posteriormente instalar individualmente el controlador [CH375](https://www.wch-ic.com/downloads/CH372DRV_EXE.html).
 
+## Prueba de soporte de versiones:
+
+Arduino IDE versions 2.1.1 ,  versiones mayores  >=1.8.19 debería trabajar.
+
+* Windows: Pruebas en Windows 11 y 10.
+* Versión de CH55xduino 0.0.16 
