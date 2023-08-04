@@ -13,7 +13,7 @@ La guía de configuración del CH552, pretende dar a conocer la forma de instala
 
 
 
-## [Ch55xduino en Winndows](https://github.com/DeqingSun/ch55xduino/tree/ch55xduino)
+## [Ch55xduino en Windows](https://github.com/DeqingSun/ch55xduino/tree/ch55xduino)
 Ch55xduino es una API de programación similar a Arduino para CH55X, una familia de MCU USB MCS51 de bajo costo. El proyecto intenta eliminar la dificultad de configurar un entorno de compilación. El sistema mínimo solo requiere un chip, 2 condensadores de desacoplamiento y una resistencia pull-up opcional.
 
 ![basic_mount](/img/basic_mount.png)
