@@ -42,7 +42,7 @@ Ahora debería encontrar una nueva entrada *CH55x Boards* en la lista en
 
 Tip: Un nuevo chip en blanco ingresará automáticamente al gestor de arranque.
 
-![basic_mount](/img/basic_mount.png)
+![basic_mount](/img/button_leds.png)
 
 * Si usó ch55xduino una vez y su código no bloquea el subsistema USB, simplemente puede presionar *Cargar*. Arduino y el firmware patearán el chip en el gestor de arranque automáticamente.
 
@@ -57,7 +57,7 @@ Ch55xduino es compatible con los métodos de carga USB y Serial. Si el puerto US
 
 La herramienta de carga actual puede usar el controlador [CH375](https://www.wch-ic.com/search?q=CH375&t=downloads) predeterminado y coexistir con la [WCHISPTool] oficial (http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html), en caso de que el controlador presente problemas es recomendable cambiar la version del controlador a WinUSB o libusb-win32, mediante [Zadig](https://zadig.akeo.ie/).
 
-![Imagen de CDC de Zadig](/img/basic_mount.png)
+![Imagen de CDC de Zadig](/img/driver.png)
 
 Posteriormente instalar individualmente el controlador [CH375](https://www.wch-ic.com/downloads/CH372DRV_EXE.html).
 
