@@ -1,7 +1,9 @@
 
 # Guía de Configuración del CH552 para Programar en Arduino
 
-La guía de configuración del CH552, pretende dar a conocer la forma de instalación y configuración del microcontrolador. El CH552 es un MCU de núcleo E8051 mejorado, compatible con el conjunto de instrucciones MCS51. Admite una frecuencia de reloj configurada de hasta 16 MHz en el IDE ARDUINO. Tiene una ROM de memoria de programa de 16K incorporada, iRAM interna de 256 bytes y xRAM interna de 1K byte. Y xRAM admite acceso directo a memoria (DMA). Ademas viene incorporado con  ADC, detección de tecla táctil capacitiva, 3 temporizadores y captura de señal y PWM, 2 UART, SPI, controlador de dispositivo USB y transceptor de velocidad completa y otros módulos funcionales.
+La guía de configuración del CH552, pretende dar a conocer la configuración del microcontrolador en un entorno de facil uso. 
+
+El CH552 es un MCU de núcleo E8051 mejorado, compatible con el conjunto de instrucciones MCS51. Admite una frecuencia de reloj de hasta 24 MHz. Tiene una ROM de memoria de programa de 16K incorporada, iRAM interna de 256 bytes y xRAM interna de 1K byte. Y xRAM admite acceso directo a memoria (DMA). Ademas viene incorporado con  ADC, detección de tecla táctil capacitiva, 3 temporizadores y captura de señal y PWM, 2 UART, SPI, controlador de dispositivo USB y transceptor de velocidad completa y otros módulos funcionales.
 
 
 ![systemblockdiagram](/img/systemblockdiagram.png)
@@ -11,16 +13,14 @@ La guía de configuración del CH552, pretende dar a conocer la forma de instala
 >https://www.wch-ic.com/products/CH552.html
 
 
-
-
 ## [Ch55xduino en Windows](https://github.com/DeqingSun/ch55xduino/tree/ch55xduino)
-Ch55xduino es una API de programación similar a Arduino para CH55X, una familia de MCU USB MCS51 de bajo costo. El proyecto intenta eliminar la dificultad de configurar un entorno de compilación. El sistema mínimo solo requiere un chip, 2 condensadores de desacoplamiento y una resistencia pull-up opcional.
+Para configurar el CH552 ya existen proyectos que integran y nos facilitan la configuración del microcontrolador, la API Ch55xduino para Arduino permite hacer uso de familia de MCU USB MCS51. El proyecto mencionado intenta eliminar la dificultad de configurar un entorno de compilación. El sistema mínimo solo requiere un chip, 2 condensadores de desacoplamiento y una resistencia pull-up opcional. 
 
 ![basic_mount](/img/basic_mount.png)
 
 **Instalación**
 
-La integración automática al IDE es compatible a través del Arduino Boards Manager. Esta es la Forma recomdendada por el desarrollador.
+La integración automática al IDE es compatible a través del Arduino Boards Manager. Esta es la forma recomdendada por el desarrollador.
 
 Inicie Arduino-IDE. En *Archivo->Preferencias*, pestaña *Configuración*, ingrese en el *"Gestor de URLs Adicionales de Tarjetas"* la siguiente URL:
 
@@ -35,22 +35,35 @@ Ahora debería encontrar una nueva entrada *CH55x Boards* en la lista en
 *Herramientas->Placa:...*
 
 * Eligir la *Placa CH552* de la lista
-* abrir el ejemplo estándar Blink desde *Archivo->Ejemplos->01. Básico->Blink*
-*  Por defecto el led se encuentra configurado en el pin 33, si tiene el LED conectado en P3_0, cambiar por el pin 30.
-* compílar presionando *Verificar*
-* Si su placa nunca se usó con ch55xduino antes, debe hacer que el chip ch55x ingrese al modo de BOOT (cargador de arranque). Debe desconectar el USB y apagar el ch55x, conectar la resistencia pull-up en la línea D+ (generalmente una resistencia de 10K entre D+ y 5V, controlada por un botón o pads adyacentes). Luego conectas USB. y presiona *Subir*. 
+* Abrir el ejemplo estándar Blink desde *Archivo->Ejemplos->01. Básico->Blink*
+* Por defecto el led se encuentra configurado en el pin 30, si el LED se configurado en otro puerto, cambiar por el pin coonfigurado reconectar para realizar la prueba.
+* Compilar presionando *Verificar*
+* Si su microcontrolador nunca se usó con ch55xduino antes, debe hacer que el chip ch552 ingrese al modo de BOOT(cargador de arranque). Este método consiste en desconectar el USB y apagar el ch552, conectar la resistencia pull-up en la línea D+ (generalmente una resistencia de 10K entre D+ y 5V, controlada por un botón o pads adyacentes).
+
+![buttons_leds](/img/button_leds.png)
+
+ Posteriormente conectar el USB. y presionar *Subir*. 
 
 Tip: Un nuevo chip en blanco ingresará automáticamente al gestor de arranque.
 
-![basic_mount](/img/button_leds.png)
+* Si usó ch55xduino una vez y su código no bloquea el subsistema USB, simplemente puede presionar *Cargar*. Arduino y el firmware cargará el chip en el gestor de arranque automáticamente.
 
-* Si usó ch55xduino una vez y su código no bloquea el subsistema USB, simplemente puede presionar *Cargar*. Arduino y el firmware patearán el chip en el gestor de arranque automáticamente.
+
+## Conexión con tarjeta [Dap Cat ](https://uelectronics.com/producto/dap-cat-debugger-programador-arm-interfaz-cmsis-dap/)
+El DAP Cat programmer es un programador SWD para procesadores ARM Cortex, y hace uso del microcontrolador CH552G. En el caso de la configuración para su uso en modo tarjeta de prácticas se configura con los pasos mencionados, la placa ya contiene la conexion para el led en el en el pin 30. 
+
+![dap cat](/img/dap-cat.png)
+
+El modo de trabajo es ingresando al modo de BOOT. 
+Posteriormente conectar el USB. y presionar *Subir*. 
 
 ## Consideraciones adicionales
 
 ### Controlador USB
 
 Ch55xduino es compatible con los métodos de carga USB y Serial. Si el puerto USB del chip CH55x está conectado a una computadora directamente, se recomienda el método USB.
+
+Existen situaciones en las que el IDE de Arduino no elije o permite elegir directamente el puerto serial, la recomendación hacer la prueba de correr el ejemplo en caso de algun error verificar que el controlador del dispositivo se encuentre instalado. 
 
 
 ### Controlador
