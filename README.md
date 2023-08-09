@@ -14,7 +14,7 @@ El CH552 es un MCU de núcleo E8051 mejorado, compatible con el conjunto de inst
 
 
 ## [Ch55xduino en Windows](https://github.com/DeqingSun/ch55xduino/tree/ch55xduino)
-Para configurar el CH552 ya existen proyectos que integran y nos facilitan la configuración del microcontrolador, la API Ch55xduino para Arduino permite hacer uso de familia de MCU USB MCS51. El proyecto mencionado intenta eliminar la dificultad de configurar un entorno de compilación. El sistema mínimo solo requiere un chip, 2 condensadores de desacoplamiento y una resistencia pull-up opcional. 
+Para configurar el CH552 ya existen proyectos que integran y nos facilitan la configuración del microcontrolador, la API Ch55xduino para Arduino permite hacer uso de familia de MCU USB MCS51. El proyecto mencionado intenta eliminar la dificultad de configurar un entorno de compilación. El [sistema mínimo solo requiere un chip](/hardware/CH552G Basic configuration.pdf), 2 condensadores de desacoplamiento y una resistencia pull-up opcional. 
 
 ![basic_mount](/img/basic_mount.png)
 
@@ -50,12 +50,12 @@ Tip: Un nuevo chip en blanco ingresará automáticamente al gestor de arranque.
 
 
 ## Conexión con tarjeta [Dap Cat ](https://uelectronics.com/producto/dap-cat-debugger-programador-arm-interfaz-cmsis-dap/)
-El DAP Cat programmer es un programador SWD para procesadores ARM Cortex, y hace uso del microcontrolador CH552G. En el caso de la configuración para su uso en modo tarjeta de prácticas se configura con los pasos mencionados, la placa ya contiene la conexion para el led en el en el pin 30. 
+El DAP Cat programmer es un programador SWD para procesadores ARM Cortex, y hace uso del microcontrolador CH552G. En el caso de la configuración para su uso en modo tarjeta de prácticas se configura con los pasos mencionados, la placa ya contiene la conexion para el led en el pin 30. 
 
 ![dap cat](/img/dap-cat.png)
 
-El modo de trabajo es ingresando al modo de BOOT. 
-Posteriormente conectar el USB. y presionar *Subir*. 
+* El modo de trabajo es ingresando al modo de BOOT. 
+* Posteriormente conectar el USB. y presionar *Subir*. 
 
 ## Consideraciones adicionales
 
