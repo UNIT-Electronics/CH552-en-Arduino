@@ -49,13 +49,7 @@ Tip: Un nuevo chip en blanco ingresará automáticamente al gestor de arranque.
 * Si usó ch55xduino una vez y su código no bloquea el subsistema USB, simplemente puede presionar *Cargar*. Arduino y el firmware cargará el chip en el gestor de arranque automáticamente.
 
 
-## Conexión con tarjeta [Dap Cat ](https://uelectronics.com/producto/dap-cat-debugger-programador-arm-interfaz-cmsis-dap/)
-El DAP Cat programmer es un programador SWD para procesadores ARM Cortex, y hace uso del microcontrolador CH552G. En el caso de la configuración para su uso en modo tarjeta de prácticas se configura con los pasos mencionados, la placa ya contiene la conexion para el led en el pin 30. 
 
-![dap cat](/img/dap-cat.png)
-
-* El modo de trabajo es ingresando al modo de BOOT. 
-* Posteriormente conectar el USB. y presionar *Subir*. 
 
 ## Consideraciones adicionales
 
