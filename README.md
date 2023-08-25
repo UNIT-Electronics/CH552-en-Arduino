@@ -56,9 +56,9 @@ Tip: Un nuevo chip en blanco ingresará automáticamente al gestor de arranque.
 
 ### Controlador USB
 
-Ch55xduino es compatible con los métodos de carga USB y Serial. Si el puerto USB del chip CH55x está conectado a una computadora directamente, se recomienda el método USB.
+Ch55xduino es compatible con los métodos de carga USB y Serial. Si el puerto USB del chip CH552 está conectado a una computadora directamente, se recomienda el método USB.
 
-Existen situaciones en las que el IDE de Arduino no elije o permite elegir directamente el puerto serial, la recomendación hacer la prueba de correr el ejemplo en caso de algun error verificar que el controlador del dispositivo se encuentre instalado. 
+Existen situaciones en las que el IDE de Arduino no elije o permite elegir directamente el puerto serial, la recomendación es hacer la prueba de correr el ejemplo en caso de algún error verificar que el controlador del dispositivo se encuentre instalado. 
 
 
 ### Controlador
@@ -71,7 +71,7 @@ Posteriormente instalar individualmente el controlador [CH375](https://www.wch-i
 
 ## Prueba de soporte de versiones:
 
-Arduino IDE versión 2.1.1 , para versiones mayores  >=1.8.19 debería trabajar.
+Arduino IDE versión 2.1.1, para versiones mayores  >=1.8.19 debería trabajar.
 
 * Windows: Pruebas en Windows 11 y 10.
 * Versión de CH55xduino 0.0.16 
