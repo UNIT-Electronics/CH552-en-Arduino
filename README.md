@@ -15,7 +15,7 @@ El CH552 es un MCU de núcleo E8051 mejorado, compatible con el conjunto de inst
 
 
 ## [Ch55xduino en Windows](https://github.com/DeqingSun/ch55xduino/tree/ch55xduino)
-Para configurar el CH552 ya existen proyectos que integran y nos facilitan la configuración del microcontrolador, la API Ch55xduino para Arduino permite hacer uso de familia de MCU USB MCS51. El proyecto mencionado intenta eliminar la dificultad de configurar un entorno de compilación. El sistema mínimo solo requiere un [chip](/hardware/CH552G Basic configuration.pdf), 2 condensadores de desacoplamiento y una resistencia pull-up opcional. 
+Para configurar el CH552 ya existen proyectos que integran y nos facilitan la configuración del microcontrolador, la API Ch55xduino para Arduino permite hacer uso de familia de MCU USB MCS51. El proyecto mencionado intenta eliminar la dificultad de configurar un entorno de compilación. El sistema mínimo solo requiere un [chip](https://github.com/UNIT-Electronics/CH552-en-Arduino/blob/main/hardware/CH552G%20Basic%20configuration.pdf), 2 condensadores de desacoplamiento y una resistencia pull-up opcional. 
 
 ![basic_mount](/img/basic_mount.png)
 
