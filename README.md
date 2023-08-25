@@ -44,7 +44,7 @@ Ahora debería encontrar una nueva entrada *CH55x Boards* en la lista en
 
  Posteriormente conectar el USB. y presionar *Subir*. 
 
-Tip: Un nuevo chip en blanco ingresará automáticamente al gestor de arranque.
+Tip: Un chip nuevo (en blanco) ingresará automáticamente al gestor de arranque.
 
 * Si usó ch55xduino una vez y su código no bloquea el subsistema USB, simplemente puede presionar *Cargar*. Arduino y el firmware cargará el chip en el gestor de arranque automáticamente.
 
