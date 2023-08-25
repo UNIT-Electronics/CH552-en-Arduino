@@ -1,7 +1,7 @@
 
 # Guía de Configuración del CH552 para Programar en Arduino
 
-La guía de configuración del CH552, pretende dar a conocer la configuración del microcontrolador en un entorno de facil uso. 
+La guía de configuración del CH552, pretende dar a conocer la configuración del microcontrolador en un entorno de fácil uso. 
 
 El CH552 es un MCU de núcleo E8051 mejorado, compatible con el conjunto de instrucciones MCS51. Admite una frecuencia de reloj de hasta 24 MHz. Tiene una ROM de memoria de programa de 16K incorporada, iRAM interna de 256 bytes y xRAM interna de 1K byte. Y xRAM admite acceso directo a memoria (DMA). Ademas viene incorporado con  ADC, detección de tecla táctil capacitiva, 3 temporizadores y captura de señal y PWM, 2 UART, SPI, controlador de dispositivo USB y transceptor de velocidad completa y otros módulos funcionales.
 
@@ -20,7 +20,7 @@ Para configurar el CH552 ya existen proyectos que integran y nos facilitan la co
 
 **Instalación**
 
-La integración automática al IDE es compatible a través del Arduino Boards Manager. Esta es la forma recomdendada por el desarrollador.
+La integración automática al IDE es compatible a través del Arduino Boards Manager. Esta es la forma recomendada por el desarrollador.
 
 Inicie Arduino-IDE. En *Archivo->Preferencias*, pestaña *Configuración*, ingrese en el *"Gestor de URLs Adicionales de Tarjetas"* la siguiente URL:
 
@@ -62,7 +62,7 @@ Existen situaciones en las que el IDE de Arduino no elije o permite elegir direc
 
 ### Controlador
 
-La herramienta de carga actual puede usar el controlador [CH375](https://www.wch-ic.com/search?q=CH375&t=downloads) predeterminado y coexistir con la [WCHISPTool] oficial (http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html), en caso de que el controlador presente problemas es recomendable cambiar la version del controlador a WinUSB o libusb-win32, mediante [Zadig](https://zadig.akeo.ie/).
+La herramienta de carga actual puede usar el controlador [CH375](https://www.wch-ic.com/search?q=CH375&t=downloads) predeterminado y coexistir con la [WCHISPTool] oficial (http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html), en caso de que el controlador presente problemas es recomendable cambiar la versión del controlador a WinUSB o libusb-win32, mediante [Zadig](https://zadig.akeo.ie/).
 
 ![Imagen de CDC de Zadig](/img/driver.png)
 
