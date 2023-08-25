@@ -71,7 +71,7 @@ Posteriormente instalar individualmente el controlador [CH375](https://www.wch-i
 
 ## Prueba de soporte de versiones:
 
-Arduino IDE versions 2.1.1 ,  versiones mayores  >=1.8.19 debería trabajar.
+Arduino IDE versión 2.1.1 , para versiones mayores  >=1.8.19 debería trabajar.
 
 * Windows: Pruebas en Windows 11 y 10.
 * Versión de CH55xduino 0.0.16 
