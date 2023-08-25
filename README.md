@@ -63,7 +63,7 @@ Existen situaciones en las que el IDE de Arduino no elije o permite elegir direc
 
 ### Controlador
 
-La herramienta de carga actual puede usar el controlador [CH375](https://www.wch-ic.com/search?q=CH375&t=downloads) predeterminado y coexistir con la [WCHISPTool](http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html), en caso de que el controlador presente problemas es recomendable cambiar la versión del controlador a WinUSB o libusb-win32, mediante [Zadig](https://zadig.akeo.ie/).
+La herramienta de carga actual puede usar el controlador [CH375](https://www.wch-ic.com/search?q=CH375&t=downloads) predeterminado y coexistir con la [WCHISPTool](http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html) oficial, en caso de que el controlador presente problemas es recomendable cambiar la versión del controlador a WinUSB o libusb-win32, mediante [Zadig](https://zadig.akeo.ie/).
 
 ![Imagen de CDC de Zadig](/img/driver.png)
 
