@@ -35,7 +35,7 @@ Inicie Arduino-IDE. En *Archivo->Preferencias*, pestaña *Configuración*, ingre
 Ahora debería encontrar una nueva entrada *CH55x Boards* en la lista en
 *Herramientas->Placa:...*
 
-* Eligir la *Placa CH552* de la lista
+* Elegir la *Placa CH552* de la lista
 * Abrir el ejemplo estándar Blink desde *Archivo->Ejemplos->01. Básico->Blink*
 * Por defecto el led se encuentra configurado en el pin 30, si el LED se configurado en otro puerto, cambiar por el pin coonfigurado reconectar para realizar la prueba.
 * Compilar presionando *Verificar*
